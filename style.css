@@ -1,0 +1,130 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background: linear-gradient(90deg, #343a40, #495057);
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+h1, h2, h5 {
+    font-weight: 700;
+}
+
+p, label, input, textarea, .card-text {
+    font-weight: 300;
+}
+
+.card {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+}
+
+/* Ensure all project images have the same size */
+.card-img-top {
+    width: 100%; /* Ensures the image fits the card width */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image scales and crops proportionally */
+}
+
+section {
+    padding: 60px 15px;
+}
+
+/* Profile image styling */
+.img-fluid.rounded-circle {
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image scales and crops proportionally */
+}
+
+img.rounded-circle {
+    border: 5px solid #dee2e6;
+    max-width: 200px;
+}
+
+form .form-control {
+    border-radius: 0.5rems;
+    padding: 9.75rem;
+}
+
+button.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+/* Profile container for image and overlay */
+.profile-container {
+    position: relative;
+    display: inline-block;
+    width: 250px; /* Increased size */
+    height: 250px; /* Increased size */
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #dee2e6;
+}
+
+.profile-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.profile-container:hover .profile-overlay {
+    opacity: 1;
+}
+
+/* About Me text alignment */
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Skills and Contact Images */
+.skills-image,
+.contact-image {
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image scales and crops proportionally */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    margin: auto; /* Centers the image */
+}
+
+footer {
+    background-color: #343a40;
+    color: #adb5bd;
+}
